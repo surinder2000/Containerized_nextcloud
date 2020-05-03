@@ -18,6 +18,13 @@ Install docker-compose in the system
 
 Create file_name.yml file for integrating nextcloud and mysql in docker
 
-Start container using 
+Start container using the command
       
            docker-compose -f file_name.yml up -d 
+           
+Stop container using the command
+           
+           docker-compose -f file_name.yml stop
+
+     
+
