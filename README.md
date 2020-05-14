@@ -1,30 +1,30 @@
-Integrating nextcloud and mysql using docker container 
+# Integrating nextcloud and mysql using docker and docker-compose 
 
-Steps followed:
+## Steps followed:
 
-Install Docker in RHEL 8
+* Install Docker in RHEL 8
 
-Start docker services in the system using systemctl command
+* Start docker services in the system using `systemctl` command
 
-            systemctl start docker
+      systemctl start docker
 
-Get the image of nextcloud and mysql from docker hub using docker pull command
+* Get the image of nextcloud and mysql from docker hub using `docker pull` command
 
-            docker pull nextcloud
+      docker pull nextcloud
 
-            docker pull mysql:5.7
+      docker pull mysql:5.7
 
-Install docker-compose in the system
+* Install docker-compose in the system
 
-Create file_name.yml file for integrating nextcloud and mysql in docker
+* Create file_name.yml file for integrating nextcloud and mysql in docker
 
-Start container using the command
+* To start the containers use the following command
       
-           docker-compose -f file_name.yml up -d 
+      docker-compose -f file_name.yml up -d 
            
-Stop container using the command
+* To stop the containers use the following command
            
-           docker-compose -f file_name.yml stop
+      docker-compose -f file_name.yml stop
 
      
 
